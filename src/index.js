@@ -4,10 +4,21 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+//const tagsH = <h2 class='h'>Test</h2>;
+const text = "Заголовок";
+
+const elements = (
+	<div>
+		<h2 className='header'>{text}</h2>
+		<input type='text' />
+    <label htmlFor=''>Просто метка</label>
+		<button/>
+		<button>Кнопка</button>
+	</div>
+);
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  elements,
   document.getElementById('root')
 );
 
